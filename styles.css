@@ -387,28 +387,6 @@ body {
     opacity: 0.8;
 }
 
-.social-links {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-links a {
-    display: inline-flex;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: #4a4d52;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease;
-}
-
-.social-links a:hover {
-    opacity: 0.8;
-}
-
 .footer-bottom {
     max-width: 1200px;
     margin: 20px auto 0;
