@@ -882,10 +882,10 @@ body {
 }
 
 .safety-card {
-    background-color: white;
+    background-color: rgba(145, 142, 142, 0.151);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.226);
 }
 
 .safety-card h3 {
