@@ -507,7 +507,7 @@ body {
 .about-button .button {
     padding: 14px 28px;
     font-size: 14px;
-    background-color: #66bb6a;
+    background-color: #ff9900;
     border-radius: 6px;
     font-weight: 600;
     transition: background-color 0.3s ease;
@@ -515,7 +515,7 @@ body {
 }
 
 .about-button .button:hover {
-    background-color: #43a047;
+    background-color: #cc7a00;
 }
 
 
