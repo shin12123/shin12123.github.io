@@ -5,6 +5,13 @@
     font-family: 'Montserrat', sans-serif;  
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+:root {
+    --primary-color: #1e88e5;
+    --dark-color: #1565c0;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+}
+
 body {
     min-height: 100vh;
 }
@@ -105,7 +112,7 @@ body {
 
 .hero-content .button {
     display: inline-block;
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     color: white;
     padding: 12px 24px;
     text-decoration: none;
@@ -116,7 +123,7 @@ body {
 }
 
 .hero-content .button:hover {
-    background-color: #1565c0;
+    background-color: var(--dark-color);
 }
 
 .section-divider {
@@ -124,10 +131,27 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     margin: 0;
 }
+.hero-icon {
+    background-color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.hero-icon img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+}
+
 
 .button {
     display: inline-block;
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     color: white;
     padding: 12px 24px;
     text-decoration: none;
@@ -137,8 +161,14 @@ body {
 }
 
 .button:hover {
-    background-color: #1565c0;
+    background-color: var(--dark-color);
 }
+.button.small {
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
 
 .about-section {
     padding: 60px 20px;
@@ -189,7 +219,7 @@ body {
 }
 
 .activities-section {
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     color: white;
     padding: 60px 20px;
 }
@@ -258,7 +288,7 @@ body {
 }
 
 .features-section {
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     color: white;
     padding: 60px 20px;
 }
@@ -337,7 +367,7 @@ body {
 }
 
 .cta-content .button {
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     color: rgb(255, 255, 255);
     padding: 12px 24px;
     text-decoration: none;
@@ -347,7 +377,7 @@ body {
 }
 
 .cta-content .button:hover {
-    background-color: #1565c0;
+    background-color: var(--dark-color);
 }
 
 .footer {
@@ -517,6 +547,14 @@ body {
 .consumer-header {
     background-image: url("img/5.jpg");
 }
+.docs-header {
+    background-image: url("img/4.jpg");
+}
+
+.contacts-header {
+    background-image: url("img/3.jpg");
+}
+
 
 .consumer-hero {
     max-width: 800px;
@@ -529,7 +567,7 @@ body {
 
 .date-badge {
     display: inline-block;
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     color: white;
     padding: 5px 15px;
     border-radius: 4px;
@@ -606,7 +644,7 @@ body {
 }
 
 .method-card h4 {
-    color: #1e88e5;
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -616,6 +654,67 @@ body {
     font-size: 14px;
     line-height: 1.6;
 }
+.contact-form-section {
+    padding: 60px 20px;
+    background-color: var(--light-bg);
+}
+
+.contact-form-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form-section h3,
+.contact-form-section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.contact-form-section textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.map-section {
+    padding: 60px 20px;
+}
+
+.map-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 
 .timeline {
     position: relative;
@@ -629,7 +728,7 @@ body {
     left: 20px;
     height: 100%;
     width: 4px;
-    background: #1e88e5;
+    background: var(--primary-color);
     border-radius: 2px;
 }
 
@@ -645,7 +744,7 @@ body {
     top: 0;
     width: 40px;
     height: 40px;
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -664,7 +763,7 @@ body {
 }
 
 .timeline-content h4 {
-    color: #1e88e5;
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -702,7 +801,7 @@ body {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #1e88e5;
+    color: var(--primary-color);
     font-weight: bold;
 }
 .main-nav a.active:after {
@@ -788,7 +887,7 @@ body {
 }
 
 .regulations h3 {
-    color: #1e88e5;
+    color: var(--primary-color);
     font-size: 24px;
     margin-bottom: 25px;
     text-align: center;
@@ -873,7 +972,7 @@ body {
 
 .safety-intro {
     padding: 60px 20px;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
 }
 
 .container {
@@ -901,7 +1000,7 @@ body {
 
 .safety-steps {
     padding: 60px 20px;
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -935,7 +1034,7 @@ body {
     width: 40px;
     height: 40px;
     background-color: white;
-    color: #1e88e5;
+    color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -977,7 +1076,7 @@ body {
 .contact-card {
     display: flex;
     align-items: flex-start;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
     border-radius: 10px;
     padding: 25px;
     transition: transform 0.3s ease;
@@ -1081,7 +1180,7 @@ body {
 
 .reporting-procedure {
     padding: 60px 20px;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
 }
 
 .reporting-card {
@@ -1112,7 +1211,7 @@ body {
 .procedure-icon {
     width: 60px;
     height: 60px;
-    background-color: #1e88e5;
+    background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1128,7 +1227,7 @@ body {
 }
 
 .procedure-content h4 {
-    color: #1e88e5;
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -1155,7 +1254,7 @@ body {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #1e88e5;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -1177,7 +1276,7 @@ body {
 }
 
 .tip-card {
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
     border-radius: 10px;
     padding: 30px;
     text-align: center;
@@ -1208,7 +1307,7 @@ body {
 }
 
 .tip-card h4 {
-    color: #1e88e5;
+    color: var(--primary-color);
     margin-bottom: 15px;
     font-size: 18px;
 }
